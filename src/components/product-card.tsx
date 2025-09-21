@@ -78,26 +78,26 @@ export function ProductCard({ product }: ProductCardProps) {
           
           {/* Discount badge */}
           {discountPercentage > 0 && (
-            <Badge className="absolute top-3 right-3 bg-gradient-to-r from-red-500 to-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
-              <Zap className="w-3 h-3 mr-1" />
+            <Badge className="absolute top-2 right-2 bg-gradient-to-r from-red-500 to-red-600 text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-lg z-10">
+              <Zap className="w-2 h-2 mr-1" />
               {discountPercentage}% OFF
             </Badge>
           )}
           
           {/* Hot deal badge */}
           {product.isHotDeal && (
-            <Badge className="absolute top-3 left-3 bg-gradient-to-r from-orange-500 to-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+            <Badge className="absolute top-2 left-2 bg-gradient-to-r from-orange-500 to-red-500 text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-lg z-10">
               🔥 HOT
             </Badge>
           )}
           
           {/* Quick action buttons */}
-          <div className="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
-            <Button size="icon" variant="secondary" className="h-8 w-8 rounded-full bg-white/90 hover:bg-white shadow-lg">
-              <Heart className="h-4 w-4" />
+          <div className="absolute top-12 right-2 flex flex-col gap-1 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
+            <Button size="icon" variant="secondary" className="h-6 w-6 rounded-full bg-white/90 hover:bg-white shadow-lg">
+              <Heart className="h-3 w-3" />
             </Button>
-            <Button size="icon" variant="secondary" className="h-8 w-8 rounded-full bg-white/90 hover:bg-white shadow-lg">
-              <Eye className="h-4 w-4" />
+            <Button size="icon" variant="secondary" className="h-6 w-6 rounded-full bg-white/90 hover:bg-white shadow-lg">
+              <Eye className="h-3 w-3" />
             </Button>
           </div>
         </div>
