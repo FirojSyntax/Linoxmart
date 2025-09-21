@@ -85,7 +85,7 @@ export function ProductCard({ product }: ProductCardProps) {
           )}
           
           {/* Hot deal badge */}
-          {product.hotDeal && (
+          {product.isHotDeal && (
             <Badge className="absolute top-3 left-3 bg-gradient-to-r from-orange-500 to-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
               🔥 HOT
             </Badge>
